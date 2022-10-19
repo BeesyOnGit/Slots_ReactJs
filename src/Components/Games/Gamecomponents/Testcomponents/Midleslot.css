@@ -1,0 +1,31 @@
+.slotm{
+    width: 80%;
+    padding-top: 12.1%;
+
+}
+.divregm{
+    width: fit-content;
+    position: relative;
+}
+.Linel{
+    width: 1px;
+    height: 40%;
+    position: absolute;
+    background-color: black;
+    top: 31%;
+}
+.Liner{
+    width: 1px;
+    height: 40%;
+    position: absolute;
+    background-color: black;
+    top: 31%;
+    left: 79%;
+}
+.img{
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+
+}

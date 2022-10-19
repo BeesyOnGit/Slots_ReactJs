@@ -1,0 +1,26 @@
+:root{
+  --color1 : #1c1c1c;
+  --color2 : #333533;
+  --buttoncolor : #daddd8;
+  --backgrounfbody: #f0f2f5;
+  --backgroundelements: #fafaff;
+  --linecolor : #727272;
+  --buttonbackgroundcolor: #2a9d8f;
+  --buttonbackgroundcolorhover: #09bc8a;
+  --warning : #ea3546;
+  --success : #09bc8a;
+  --colorboxchad: rgba(28,28,28,0.14);
+  --filternavbar : invert(11%) sepia(6%) saturate(1303%) hue-rotate(169deg) brightness(95%) contrast(89%);
+  --filterlogobackgroundcolor : invert(86%) sepia(4%) saturate(985%) hue-rotate(202deg) brightness(111%) contrast(106%);
+  --boxshadow :0px 5px 9px 0px var(--colorboxchad);
+  --boxshadowinput :inset 0px 0px 5px 1px var(--colorboxchad);
+  --inputshadow : rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+}
+body{
+  margin: 0;
+  background-color: var(--backgrounfbody);
+}
+*{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}

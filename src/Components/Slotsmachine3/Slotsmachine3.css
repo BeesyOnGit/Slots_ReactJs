@@ -1,0 +1,56 @@
+.slotcontainer3{
+    width: 70%;
+    height:fit-content;
+    background-image: url(/3slotsmachinenew.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-top: 5%;
+}
+
+.img3s{
+    width: 100%;
+}
+.imgreg{
+    width: 50%;
+    visibility: hidden;
+}
+.ligne3{
+    width: 1px;
+    height: 45%;
+    background-color: var(--linecolor);
+}
+
+.slotsdiv3{
+    width: 100%;
+    height: 100%;
+}
+#slot31{
+    position: absolute;
+    top: 39%;
+    left: 16%;
+    width: 17%;
+}
+#slot32{
+    position: absolute;
+    top: 39%;
+    left: 42%;
+    width: 17%;
+}
+#slot33{
+    position: absolute;
+    top: 39%;
+    left: 67%;
+    width: 17%;
+}
+.ligne3:nth-child(2){
+    position: absolute;
+    top: 32%;
+    left: 36.5%;
+}
+.ligne3:nth-child(4){
+    position: absolute;
+    top: 32%;
+    left: 64%;
+}

@@ -1,0 +1,138 @@
+.playsection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.playdiv{
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.playdiv h3:nth-child(2){
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+}
+.playdiv button:nth-child(4){
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--buttonbackgroundcolor);
+    border-style: none;
+    color: var(--backgrounfbody);
+    cursor: pointer;
+    transition: background-color 300ms ease-out;
+}
+.playdiv button:nth-child(4):hover{
+    background-color: var(--buttonbackgroundcolorhover);
+    transition: background-color 400ms ease-out;
+}
+.playdiv p:nth-child(5){
+    color: var(--warning);
+    font-size: 1.2em;
+    padding: 20px 0px 0px;
+    text-align: center;
+}
+
+.bet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+.bet h3{
+    padding: 0px 30px 0px;
+    font-size: 1.5em;
+}
+.bet img:nth-child(3){
+    width: 25px;
+    margin-left: 20px;
+}
+.bet input{
+    width: fit-content;
+    height: 35px;
+    width: 25%;
+    text-align: center;
+    background-color: var(--backgroundelements);
+    border-radius: 15px;
+    border-style: none;
+    border-color: var(--linecolor);
+    color: var(--color2);
+    font-size: 1.5em;
+    box-shadow: var(--boxshadowinput)
+}
+.bet input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.multipliers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 17px;
+    background-color: var(--buttonbackgroundcolor);
+    width: 100%;
+    margin: 20px 0px 20px;
+}
+.multipliers h5{
+  width: 20%;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+  background-color: var(--buttonbackgroundcolor);
+  cursor: pointer;
+  color: var(--backgrounfbody);
+  transition: background-color 400ms ease-out;
+}
+.multipliers h5.activemulti{
+  background-color: var(--backgroundelements);
+  height: 80%;
+  cursor: pointer;
+  color: var(--color2);
+  box-shadow: var(--boxshadow);
+}
+.multipliers h5:hover{
+  background-color: var(--backgroundelements);
+  height: 80%;
+  color: var(--color2);
+  cursor: pointer;
+  box-shadow: var(--boxshadow);
+  transition: background-color 400ms ease-out, color 300ms ease-out;
+}
+.multipliers h5.activemulti:hover{
+    background-color: var(--backgroundelements);
+    cursor: pointer;
+    color: var(--color2);
+}
+.multipliers h5:first-child{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.multipliers h5:last-child{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.separation{
+    width: 1px;
+    height: 25px;
+    background-color: var(--backgrounfbody);
+}
+.titlemultipliers{
+    color: var(--color2);
+}

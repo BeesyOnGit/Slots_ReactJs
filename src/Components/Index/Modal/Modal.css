@@ -1,0 +1,88 @@
+.Modal.hidden{
+    pointer-events: none;
+    background: url(Background);
+
+
+}
+.Modal{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    pointer-events:all;
+}
+.overlaymodal.hidden{
+    opacity: 0;
+    pointer-events: none;
+    background: url(Background);
+    /* transition: opacity 200ms 200ms ease-out; */
+    transition: opacity 200ms 400ms ease-out;
+}
+.overlaymodal{
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #666666d3;
+    background: linear-gradient(135deg, rgba(54, 54, 54, 0.1), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* transition: opacity 300ms 100ms ease-out; */
+    transition: opacity 300ms 100ms ease-out;
+    pointer-events:all;
+}
+.divmodal.hidden{
+    opacity: 0;
+    pointer-events: none;
+    background: url(Background);
+    top: -50vh ;
+    /* transition: opacity 200ms 200ms ease-out,top 300ms 100ms ease-out */
+    transition: opacity 200ms 100ms ease-out,top 300ms 100ms ease-out
+}
+.divmodal{
+    opacity:1;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    top: 15vh;
+    left: 38.5vw;
+    pointer-events:all;
+    /* transform: translate(-50%, 50%); */
+    /* transition: opacity 500ms 300ms ease-out, top 500ms 100ms ease-out */
+    transition: opacity 300ms 500ms ease-out, top 300ms 400ms ease-out
+}
+.divchoice{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+.titlemodal:nth-child(1){
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--buttonbackgroundcolor);
+    padding: 10px 0px 10px ;
+    border-top-left-radius: 10px ;
+    color: var(--backgrounfbody);
+}
+.titlemodal:nth-child(2){
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px 10px ;
+    background-color: var(--buttonbackgroundcolor);
+    border-top-right-radius: 10px ;
+    color: var(--backgrounfbody);
+}
+.titlemodal.active{
+    background-color: var(--backgroundelements);
+    color: var(--color2);
+}
+
+.titlemodal:hover{
+    background-color: var(--backgroundelements);
+    cursor: pointer;
+    color: var(--color2);
+    transition: background-color 300ms ease-out, color 300ms 100ms ease-out ;
+}

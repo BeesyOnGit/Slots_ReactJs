@@ -1,0 +1,86 @@
+.sliderbody{
+    background-color: var(--backgroundelements);
+    border-radius: 50000px;
+    width: 50px;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    border-color: var(--color2);
+    height: 20px;
+    overflow: hidden;
+}
+.Slider{
+    width: 30px;
+    height: 30px;
+    border-radius: 7000px;
+    background-color: var(--backgrounfbody);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color2);
+    transform: translate(-60%);
+    transition: transform 400ms 50ms linear;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.Slider.active{
+    transform: translate(60%);
+    transition: transform 400ms 50ms linear;
+}
+.slidercontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+.overlay{
+    background-color: rgb(28, 224, 38);
+    width: 50px;
+    height: 20px;
+    transform: translate(-100px);
+    transition: transform 600ms 50ms linear;
+}
+.overlay.active{
+    transform: translate(0px);
+    transition: transform 500ms  ease-out;
+}
+.fa-moon-o{
+    font-size: 110%;
+    animation: moon 400ms ease-in ;
+}
+.fa-sun-o{
+    font-size: 110%;
+    animation: sun 400ms ease-in;
+}
+@keyframes moon {
+    0%{
+        font-size: 110%;
+        opacity: 0%;
+    }
+    50%{
+        font-size: 0em;
+        opacity: 0%;
+    }
+    100%{
+        font-size: 110%;
+        opacity: 100%;
+    }
+}
+@keyframes sun {
+    0%{
+        font-size: 110%;
+        opacity: 0%;
+    }
+    50%{
+        font-size: 0em;
+        opacity: 0%;
+    }
+    100%{
+        font-size: 110%;
+        opacity: 100%;
+    }
+}

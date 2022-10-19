@@ -1,0 +1,80 @@
+.navbar{
+    width: 100vw;
+    height: 60px;
+    background-color: var(--backgroundelements);
+    position: fixed;
+    display: flex;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--boxshadow)
+}
+.logodiv{
+    width: 70vw ;
+    
+}
+.logodiv img{
+    margin-left: 50px ;
+    width: 120px;
+    cursor: pointer;
+    
+}
+.user{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    color: var(--color2);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.balance{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: fit-content;
+}
+.balancetxt{
+    width: fit-content;
+    margin-right: 10px;
+}
+.coinimg{
+    width: 22px;
+    margin-left: 5px;
+}
+.Profilpic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.identify{
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+    font-size: 1.2em;
+    background-color: var(--buttonbackgroundcolor);
+    color: var(--backgrounfbody);
+    border-style: none;
+    border-radius: 10px;
+    transition: opacity 200ms 300ms ease-out;
+}
+.identify:hover{
+    background-color: var(--buttonbackgroundcolorhover);
+    cursor: pointer;
+}
+.Username{
+    margin: 0px 10px 0px 10px;
+
+}
+.identify.modalon{
+    opacity: 0;
+    transition: opacity 200ms 600ms ease-out;
+    pointer-events: none;
+    
+}

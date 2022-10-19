@@ -1,0 +1,64 @@
+:root{
+    --radius: 11px;
+    --shadow: 0px 0px 9px 0px rgba(0,0,0,0.30);
+}
+
+.butt{
+    background-color: var(--buttonbackgroundcolor);
+    color: var(--backgrounfbody);
+    width: 50%;
+    font-size: 1.5em;
+    border-style: none;
+    margin-left: 1px;
+
+}
+.butt.begin{
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+.butt.end{
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    margin-left: 1px;
+}
+.butt:hover{
+    background-color: var(--backgroundelements);
+    cursor: pointer;
+    color: var(--color2);
+    box-shadow: var(--shadow);
+}
+.butt.begin:hover{
+    background-color: var(--backgroundelements);
+    cursor: pointer;
+    color: var(--color2);
+    box-shadow: var(--shadow);
+}
+.butt.end:hover{
+    background-color: var(--backgroundelements);
+    cursor: pointer;
+    color: var(--color2);
+    box-shadow: var(--shadow);
+}
+.butt.selected{
+    background-color: var(--backgroundelements);
+    cursor: pointer;
+    color: var(--color2);
+    box-shadow: var(--shadow);
+}
+.butt.end.selected{
+    background-color: var(--backgroundelements);
+    cursor: pointer;
+    color: var(--color2);
+    box-shadow: var(--shadow);
+}
+.butt.begin.selected{
+    background-color: var(--backgroundelements);
+    cursor: pointer;
+    color: var(--color2);
+    box-shadow: var(--shadow);
+}
+.multibutton{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}

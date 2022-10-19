@@ -1,0 +1,52 @@
+.presentation{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color2);
+}
+.presentation h2{
+    padding: 20px 30px 20px 30px ;
+}
+.presentationlogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 50px;
+}
+.presentationlogo img{
+    width: 35%;
+    align-items: center;
+    margin-top: 20px
+}
+
+.presentationlogo h2:nth-child(1){
+    font-size: 4em;
+    padding: 20px 30px 20px 30px;
+    color: var(--color2);
+    margin-top:20px;
+    
+}
+.presentationlogo h1:nth-child(3){
+    font-size: 4em;
+    padding-left: 20px;
+    color: var(--color2);
+    margin-top: 20px;
+    
+}
+.presentationseparator{
+    width: 80%;
+    height:1px;
+    border-width:0;
+    color:var(--color2);
+    background-color: var(--color2);
+}
+.presentation p:nth-child(2) {
+    width: 80%;
+    text-align: center;
+    text-justify: auto;
+
+}

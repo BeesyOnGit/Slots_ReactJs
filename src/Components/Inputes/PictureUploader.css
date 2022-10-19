@@ -1,0 +1,42 @@
+.uploaddiv{
+    width: 10vw;
+    height: 10vw;
+    border: 10px solid var(--backgrounfbody);
+    border-radius: 50%;
+    transform: translate(0%,10%);
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgrounfbody);
+}
+.uploaddiv:hover{
+    transform: translate(0%,0%);
+    transition: transform 200ms ease-in;
+}
+.profilePic{
+    width: 100%;
+    background-size: cover;
+
+
+}
+.overlayprofilepic{
+    background-color: rgba(80, 80, 80, 0.548);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(0%,0%);
+    text-align: center;
+    text-justify: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    pointer-events: none;
+
+}

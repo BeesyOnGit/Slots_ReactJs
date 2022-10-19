@@ -1,0 +1,112 @@
+.divgeneral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.divinput{
+    margin: 10px 0px 0px 0px;
+    height: 60px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: baseline;
+    align-items: baseline;
+}
+.inputeform{
+    padding: 10px 10px;
+    border: 0px none gray;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    width: 93%;
+    color: var(--color2);
+    background-color: var(--backgroundelements);
+    box-shadow: var(--inputshadow);
+}
+.inputeform::placeholder{
+    opacity: 0;
+}
+.divinput label{
+    position:absolute;
+    top: 0.6rem;
+    left: 1rem;
+    width: fit-content;
+    height: 1em;
+    text-align: center;
+    font-size: 1em;
+
+    color: rgba(0, 0, 0, 0.534);
+    transition: transform 200ms ease-out, font-size 200ms ease-out;
+    pointer-events: none;
+    background: url(Background);
+}
+.divinput div{
+    position:absolute;
+    bottom: 30%;
+    left: 0.5rem;
+    transition: transform 200ms ease-out;
+    width: 1em;
+    height: 4px;
+    color: rgba(255, 253, 253, 0);
+    background-color: var(--backgroundelements);
+    pointer-events: none;
+    opacity: 0;
+}
+.inputeform:focus {
+    outline: none;
+    border: none;
+}
+.inputeform:focus ~ label{
+    /* transform: translate(0%,-120%); */
+    transform: translate(0%,-130%);
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 200ms ease-out, font-size 200ms ease-out, color 200ms ease-in,bold 200ms ease-out;
+    color: var(--color2)
+}
+.inputeform:focus ~ div{
+    transform: translate(0%,-1000%);
+    width: fit-content;
+    padding: 0px 5px;
+    transition: transform 200ms ease-out, opacity 500ms ease-out;
+    color: rgba(255, 253, 253, 0);
+    opacity: 1;
+}
+.inputeform:not(:placeholder-shown) ~label{
+    /* transform: translate(0%,-120%); */
+    transform: translate(0%,-130%);
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    color:  rgba(0, 0, 0, 0.534);
+}
+.inputeform:not(:placeholder-shown) ~div{
+    transform: translate(0%,-1000%);
+    width: fit-content;
+    padding: 0px 5px;
+    transition: transform 200ms ease-out;
+    color: rgba(255, 253, 253, 0);
+    opacity: 1;
+}
+.inputeform:invalid[focused='true'] { 
+    outline: 1px solid var(--warning);
+}
+.inputeform:invalid[focused='true'] ~label{ 
+    color: var(--warning);
+}
+.errorsdispinput{
+    color: var(--warning);
+    font-size: 0.7em;
+    height: 2vh;
+    margin: 5px 0px 0px 0px;
+    width: 20vw;
+    padding-bottom: 10px;
+    display: none;
+
+}
+.inputeform:not(:valid)[focused='true'] ~ span{
+    display: block;
+}

@@ -1,0 +1,19 @@
+.Separa{
+    width: 100%;
+    height: 100px;
+}
+.slotl{
+    width: 80%;
+    padding-left: 20.5%;
+}
+.divregl{
+    width: fit-content;
+    position: relative;
+}
+.imgl{
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+
+}

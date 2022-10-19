@@ -1,0 +1,74 @@
+.accespoint{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--backgroundelements);
+    padding: 20px 0px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;
+    margin: auto;
+    position: relative;
+}
+.inp{
+    margin: 10px auto 10px;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    color: var(--color2);
+    padding-left: 10px;
+    background-color: var(--backgroundelements);
+    border-style: none;
+    color: var(--color2);
+    box-shadow: var(--boxshadowinput)
+}
+.inpsub{
+    margin: 10px auto 10px;
+    width: 60%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-style: none;
+    background-color: var(--buttonbackgroundcolor);
+    color: var(--backgrounfbody);
+/*     position: absolute;
+    top: 75%;
+    left: 20%; */
+}
+.inpsub:hover{
+    background-color: var(--buttonbackgroundcolorhover);
+    color: var(--backgrounfbody);
+    cursor: pointer;
+}
+.avertissement{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--warning);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 20px;
+}
+.succes{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--success);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 20px;
+}
+.displaynone{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.inputeslogin{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}

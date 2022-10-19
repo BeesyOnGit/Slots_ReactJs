@@ -1,0 +1,33 @@
+.presentation{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color2);
+
+}
+.presentation h1:nth-child(1){
+    margin: 50px 0px 30px;
+    font-size: 2em;
+
+}
+.presentation p:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    text-justify: auto;
+    font-size: 1.2em;
+    margin: 50px 0px 50px;
+
+}
+.presentationimg{
+    margin: 50px 0px 40px;
+    cursor: pointer;
+}
+.presentationseparator{
+    width: 80%;
+    height:1px;
+    border-width:0;
+    color:var(--color2);
+    background-color: var(--color2);
+}
